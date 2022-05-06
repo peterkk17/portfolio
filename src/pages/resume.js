@@ -5,8 +5,8 @@ import Timeline from '../components/timeline.js';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import Item from '@mui/material/ListItem';
-import DownloadLink from "react-download-link";
-import ResumeFile from '../data/pdf/Resume.pdf';
+//import DownloadLink from "react-download-link";
+//import ResumeFile from '../data/pdf/Resume.pdf';
 import './pages.css';
 
 
@@ -17,14 +17,6 @@ const styles = {
     }
 };
 
-/*
-const resumeStyles = {
-    container: {
-        direction:"column",
-        justifyContent:"center"
-    }
-};
-*/
 
 class Resume extends React.Component {
 
@@ -44,12 +36,7 @@ render() {
                         
                     </Grid>
                     <Grid container justifyContent="flex-end" className="download-link"sx={{px:2}}>
-                    <DownloadLink className="download-link"
-                    variant="h3"
-                    filename={ResumeFile}
-                    label="Download Full Resume"
-                    >
-                    </DownloadLink>
+                    
 
                     </Grid>
                     
@@ -69,5 +56,13 @@ render() {
 
 export default Resume;
 
+/*
+<DownloadLink className="download-link"
+                    variant="h3"
+                    filename={ResumeFile}
+                    label="Download Full Resume"
+                    >
+                    </DownloadLink>
 
+*/
 
